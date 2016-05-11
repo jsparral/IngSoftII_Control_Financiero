@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Presupuesto
 {
-    public class Usuario:Roles
+    public class Usuario
     {
         private string id;
         private string password;

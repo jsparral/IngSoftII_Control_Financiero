@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Presupuesto
 {
-    public class Gastos:Proyecto
+    public class Gastos
     {
         private int gastos;
 

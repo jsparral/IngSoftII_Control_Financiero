@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Presupuesto.CategoriaGastos" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEBAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CategoriaGastos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presupuesto.ConectarPostgres" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAIAAQAAAIAgAAAAAAAAAA=</HashCode>
+      <FileName>ConectarPostgres.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presupuesto.DatosOrigen" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAACBAAAAAABAAAAAAIA=</HashCode>
+      <FileName>DatosOrigen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presupuesto.DetalleCategoria" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAFAAAABAAAAAAACAAAAAA=</HashCode>
+      <FileName>DetalleCategoria.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presupuesto.Gastos" Collapsed="true">
+    <Position X="1.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Gastos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presupuesto.Proyecto" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAFAAAAVAAAABAACQAAAAgAAAAA=</HashCode>
+      <FileName>Proyecto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presupuesto.Roles" Collapsed="true">
+    <Position X="3.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAABAAAAAAAAAAgAAgAAAAA=</HashCode>
+      <FileName>Roles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presupuesto.Transferencias" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABEAAAAAAAAAAAAAAAgAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transferencias.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presupuesto.Usuario" Collapsed="true">
+    <Position X="3.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAACAgAAAAAAAAACAAAAAAAgAAAgA=</HashCode>
+      <FileName>Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlFiPresupuestos.Form1" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlFiPresupuestos.Program" Collapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlFiPresupuestos.Properties.Resources" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlFiPresupuestos.Properties.Settings" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
