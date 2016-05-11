@@ -12,7 +12,9 @@ namespace Presupuesto
 
         public void crearUsuario()
         {
-            throw new System.NotImplementedException();
+            string cadena = @"INSERT INTO usuario VALUES('" + this.id + "'," + this.password + "')";
+
+            return cadena;
         }
 
         public void modificarUsuario()
