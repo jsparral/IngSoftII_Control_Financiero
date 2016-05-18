@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Npgsql;
 
-namespace Presupuesto
+namespace ControlFiPresupuestos
 {
     class ConectarPostgres
     {
@@ -28,7 +28,7 @@ namespace Presupuesto
         }
 
 
-        //ejecuta transacciones insert,update,delete
+        //ejecuta transacciones insert,update,delete,select
 
         public string EjecutarSQL() {
 
@@ -78,7 +78,7 @@ namespace Presupuesto
             {
 
                 msg= ex.Message;
-                throw;
+                
             }
             return ds;
         }
