@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ControlFiPresupuestos
 {
-    private class DatosOrigen
+    public class DatosOrigen
     {
         private string identificacion;
         private string nombre;
@@ -78,15 +78,20 @@ namespace ControlFiPresupuestos
             }
         }
 
-        public void consultarOrigen()
+        public string consultarOrigenes()
         {
-            throw new System.NotImplementedException();
+
+            string cadena = @"select * from datosorigen";
+            return cadena;
         }
 
         public string guardarOrigen() {
 
-            string cadena = @"insert into datosorigen values('"this.identificacion"','"this.Nombre"','"this.Contrato"','"this."')";
+            string cadena = @"insert into datosorigen values('"+this.identificacion+"','"+this.nombre+"','"+this.contrato+"','"+this.feccontrato+"','"+this.covenio+"')";
             return cadena;
         }
+       
+
+
     }
 }
