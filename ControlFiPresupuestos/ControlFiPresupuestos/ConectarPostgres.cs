@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Npgsql;
+using System.Data;
 
-namespace Presupuesto
+namespace ControlFiPresupuestos
 {
     class ConectarPostgres
     {
@@ -28,7 +29,7 @@ namespace Presupuesto
         }
 
 
-        //ejecuta transacciones insert,update,delete
+        //ejecuta transacciones insert,update,delete,select
 
         public string EjecutarSQL() {
 
@@ -78,9 +79,65 @@ namespace Presupuesto
             {
 
                 msg= ex.Message;
-                throw;
+                
             }
             return ds;
+        }
+
+        public string ObtenerReporte(DataSet ds)
+
+        {
+
+            string msg = "";
+
+            try
+
+            {
+
+                conn.Open();
+
+                NpgsqlCommand cmd = conn.CreateCommand();
+
+                cmd.CommandText = cadena;
+
+                NpgsqlDataAdapter adap = new NpgsqlDataAdapter();
+
+                adap.SelectCommand = cmd;
+
+                adap.Fill(ds, "temporal");
+
+                msg = "Consulta exitosa";
+
+            }
+
+            catch (Exception ex)
+
+            {
+
+                msg = ex.Message;
+
+            }
+
+            return msg;
+
+        }
+
+
+
+
+        public void CerrarBase(out string msg) {
+
+            msg = "";
+            try
+            {
+                conn.Close();
+                msg = "Base de Datos Desconectada";
+            }
+            catch (Exception ex)
+            {
+                msg = ex.Message;
+            }
+
         }
 
 

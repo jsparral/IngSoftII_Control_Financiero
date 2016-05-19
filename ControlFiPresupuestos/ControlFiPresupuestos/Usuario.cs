@@ -3,16 +3,49 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Presupuesto
+namespace ControlFiPresupuestos
 {
     public class Usuario
     {
         private string id;
         private string password;
 
-        public void crearUsuario()
+        public Usuario() {
+
+
+        }
+
+        public string Id
         {
-            throw new System.NotImplementedException();
+            get
+            {
+                return id;
+            }
+
+            set
+            {
+                id = value; ;
+            }
+        }
+
+        public string Password
+        {
+            get
+            {
+                return password;
+            }
+
+            set
+            {
+                password = value;
+            }
+        }
+
+        public string crearUsuario()
+        {
+            string cadena = @"INSERT INTO usuario VALUES('" + this.Id + "'," + this.Password + "')";
+
+            return cadena;
         }
 
         public void modificarUsuario()
@@ -25,9 +58,11 @@ namespace Presupuesto
             throw new System.NotImplementedException();
         }
 
-        public void consultarUsuario()
+        public string consultarUsuario()
         {
-            throw new System.NotImplementedException();
+            string cadena = @"select * from usuario";
+
+            return cadena;
         }
     }
 }
