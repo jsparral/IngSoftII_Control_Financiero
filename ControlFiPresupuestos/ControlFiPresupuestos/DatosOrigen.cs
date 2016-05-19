@@ -10,8 +10,8 @@ namespace ControlFiPresupuestos
         private string identificacion;
         private string nombre;
         private string contrato;
-        private DateTime feccontrato;
-        private string covenio;
+        private string feccontrato;
+        private string convenio;
 
         public string Identificacion
         {
@@ -52,7 +52,7 @@ namespace ControlFiPresupuestos
             }
         }
 
-        public DateTime Feccontrato
+        public string Feccontrato
         {
             get
             {
@@ -65,16 +65,16 @@ namespace ControlFiPresupuestos
             }
         }
 
-        public string Covenio
+        public string Convenio
         {
             get
             {
-                return covenio;
+                return convenio;
             }
 
             set
             {
-                covenio = value;
+                convenio = value;
             }
         }
 
@@ -85,9 +85,10 @@ namespace ControlFiPresupuestos
             return cadena;
         }
 
-        public string guardarOrigen() {
+        public string InsertarOrigen() {
 
-            string cadena = @"insert into datosorigen values('"+this.identificacion+"','"+this.nombre+"','"+this.contrato+"','"+this.feccontrato+"','"+this.covenio+"')";
+            string cadena = @"insert into datosorigen values('" + this.identificacion + "','" + this.nombre + "','" + this.contrato + "','" + this.feccontrato + "','" + this.convenio + "')";
+
             return cadena;
         }
        
