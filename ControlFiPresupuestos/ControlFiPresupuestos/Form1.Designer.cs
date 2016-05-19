@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -82,13 +83,14 @@
             // 
             // Ingreso
             // 
+            this.Ingreso.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Ingreso.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ingreso.Location = new System.Drawing.Point(299, 169);
+            this.Ingreso.Image = ((System.Drawing.Image)(resources.GetObject("Ingreso.Image")));
+            this.Ingreso.Location = new System.Drawing.Point(295, 169);
             this.Ingreso.Name = "Ingreso";
-            this.Ingreso.Size = new System.Drawing.Size(160, 39);
+            this.Ingreso.Size = new System.Drawing.Size(164, 64);
             this.Ingreso.TabIndex = 4;
-            this.Ingreso.Text = "Ingresar";
-            this.Ingreso.UseVisualStyleBackColor = true;
+            this.Ingreso.UseVisualStyleBackColor = false;
             this.Ingreso.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3

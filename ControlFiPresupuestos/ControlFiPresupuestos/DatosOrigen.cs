@@ -91,8 +91,40 @@ namespace ControlFiPresupuestos
 
             return cadena;
         }
-       
 
+
+
+        public string EliminarDatosOrigen()
+
+        {
+
+            string cadena = @"delete from datosorigen where(identificacion= '" + this.identificacion + "')";
+
+            return cadena;
+
+        }
+
+
+
+        public string ModificarOrigen()
+
+        {
+
+            string cadena = @"update datosorigen set nombre='" + this.nombre + "', contrato='" + this.contrato + "', fecha_contrato='" + this.feccontrato + "', convenio='" + this.convenio + "' where(identificacion= '" + this.identificacion + "')";
+
+            return cadena;
+
+        }
+
+        public string ConsultarUnDatosOrigen()
+
+        {
+
+            string cadena = @"select * from datosorigen where(identificacion= '" + this.identificacion + "')";
+
+            return cadena;
+
+        }
 
     }
 }
